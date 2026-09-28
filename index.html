@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Confirmación - Jennifer Ruiz Michel</title>
+    <meta name="description" content="Invitación digital para la Confirmación de Jennifer Ruiz Michel" />
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background: #fdfaf7;
+        color: #4a3e3d;
+        overflow-x: hidden;
+      }
+      .font-serif-title {
+        font-family: 'Cormorant Garamond', serif;
+      }
+      .font-script {
+        font-family: 'Alex Brush', cursive;
+      }
+      .gold-gradient-text {
+        background: linear-gradient(135deg, #b8860b 0%, #e5b887 50%, #ad7835 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gold-border {
+        border-color: rgba(212, 175, 55, 0.4);
+      }
+      .bg-rose-cream {
+        background: linear-gradient(180deg, #fff5f7 0%, #fdfbf7 50%, #fff0f3 100%);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(229, 184, 135, 0.35);
+        box-shadow: 0 15px 35px -5px rgba(220, 160, 175, 0.15), 0 5px 15px rgba(0, 0, 0, 0.04);
+      }
+      .gold-button {
+        background: linear-gradient(135deg, #d4af37 0%, #e5b887 50%, #c59b27 100%);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+      }
+      .gold-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+      }
+      .rose-button {
+        background: linear-gradient(135deg, #f4acb7 0%, #ffcad4 50%, #f4acb7 100%);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 15px rgba(244, 172, 183, 0.35);
+      }
+      .rose-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(244, 172, 183, 0.5);
+      }
+      .whatsapp-button {
+        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+      }
+      .whatsapp-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(2deg); }
+      }
+      .animate-float {
+        animation: floatSlow 5s ease-in-out infinite;
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.6; transform: scale(1); }
+        50% { opacity: 0.9; transform: scale(1.05); }
+      }
+      .animate-pulse-glow {
+        animation: pulseGlow 3s ease-in-out infinite;
+      }
+      #petals-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 10;
+      }
+    </style>
+    <style>
+      *, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-6{bottom:1.5rem}.left-1\/2{left:50%}.right-4{right:1rem}.top-4{top:1rem}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-4{margin-top:1rem;margin-bottom:1rem}.-mt-6{margin-top:-1.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2\/3{height:66.666667%}.h-20{height:5rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-4\/5{height:80%}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-\[320px\]{height:320px}.h-\[360px\]{height:360px}.h-full{height:100%}.max-h-\[85vh\]{max-height:85vh}.min-h-\[220px\]{min-height:220px}.min-h-screen{min-height:100vh}.w-1{width:0.25rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-24{width:6rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-48{width:12rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-\[320px\]{width:320px}.w-\[360px\]{width:360px}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-0\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.125rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * calc(1 - var(--tw-space-y-reverse)))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-amber-100{--tw-border-opacity:1;border-color:rgb(254 243 199 / var(--tw-border-opacity, 1))}.border-amber-100\/60{border-color:rgb(254 243 199 / 0.6)}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-200\/80{border-color:rgb(253 230 138 / 0.8)}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-pink-100{--tw-border-opacity:1;border-color:rgb(252 231 243 / var(--tw-border-opacity, 1))}.border-pink-100\/60{border-color:rgb(252 231 243 / 0.6)}.border-pink-200{--tw-border-opacity:1;border-color:rgb(251 207 232 / var(--tw-border-opacity, 1))}.border-pink-300{--tw-border-opacity:1;border-color:rgb(249 168 212 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-100\/80{background-color:rgb(254 243 199 / 0.8)}.bg-amber-300{--tw-bg-opacity:1;background-color:rgb(252 211 77 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-50\/50{background-color:rgb(255 251 235 / 0.5)}.bg-amber-50\/60{background-color:rgb(255 251 235 / 0.6)}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-pink-100{--tw-bg-opacity:1;background-color:rgb(252 231 243 / var(--tw-bg-opacity, 1))}.bg-pink-50{--tw-bg-opacity:1;background-color:rgb(253 242 248 / var(--tw-bg-opacity, 1))}.bg-pink-50\/50{background-color:rgb(253 242 248 / 0.5)}.bg-pink-50\/60{background-color:rgb(253 242 248 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-pink-50\/70{background-color:rgb(253 242 248 / 0.7)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-amber-50{--tw-gradient-from:#fffbeb var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 251 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-pink-100{--tw-gradient-from:#fce7f3 var(--tw-gradient-from-position);--tw-gradient-to:rgb(252 231 243 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-pink-50{--tw-gradient-from:#fdf2f8 var(--tw-gradient-from-position);--tw-gradient-to:rgb(253 242 248 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-amber-400{--tw-gradient-to:rgb(251 191 36 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fbbf24 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-amber-50{--tw-gradient-to:rgb(255 251 235 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fffbeb var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-pink-400{--tw-gradient-to:rgb(244 114 182 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #f472b6 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-amber-100{--tw-gradient-to:#fef3c7 var(--tw-gradient-to-position)}.to-pink-50{--tw-gradient-to:#fdf2f8 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.to-white{--tw-gradient-to:#fff var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pr-1{padding-right:0.25rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-base{font-size:1rem;line-height:1.5rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-\[0\.25em\]{letter-spacing:0.25em}.tracking-\[0\.3em\]{letter-spacing:0.3em}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-pink-400{--tw-text-opacity:1;color:rgb(244 114 182 / var(--tw-text-opacity, 1))}.text-pink-500{--tw-text-opacity:1;color:rgb(236 72 153 / var(--tw-text-opacity, 1))}.text-pink-600{--tw-text-opacity:1;color:rgb(219 39 119 / var(--tw-text-opacity, 1))}.text-pink-700{--tw-text-opacity:1;color:rgb(190 24 93 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-0{opacity:0}.opacity-30{opacity:0.3}.opacity-90{opacity:0.9}.opacity-100{opacity:1}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.drop-shadow-sm{--tw-drop-shadow:drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-pink-100 *::selection{--tw-bg-opacity:1;background-color:rgb(252 231 243 / var(--tw-bg-opacity, 1))}.selection\:text-pink-900 *::selection{--tw-text-opacity:1;color:rgb(131 24 67 / var(--tw-text-opacity, 1))}.selection\:bg-pink-100::selection{--tw-bg-opacity:1;background-color:rgb(252 231 243 / var(--tw-bg-opacity, 1))}.selection\:text-pink-900::selection{--tw-text-opacity:1;color:rgb(131 24 67 / var(--tw-text-opacity, 1))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-amber-300:hover{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.hover\:border-pink-300:hover{--tw-border-opacity:1;border-color:rgb(249 168 212 / var(--tw-border-opacity, 1))}.hover\:bg-amber-100:hover{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.hover\:bg-pink-50:hover{--tw-bg-opacity:1;background-color:rgb(253 242 248 / var(--tw-bg-opacity, 1))}.hover\:text-gray-600:hover{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.hover\:text-pink-600:hover{--tw-text-opacity:1;color:rgb(219 39 119 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:opacity-100:hover{opacity:1}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-amber-400:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(251 191 36 / var(--tw-ring-opacity, 1))}.focus\:ring-pink-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(249 168 212 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:h-24{height:6rem}.sm\:h-\[500px\]{height:500px}.sm\:h-\[560px\]{height:560px}.sm\:w-24{width:6rem}.sm\:w-\[500px\]{width:500px}.sm\:w-\[560px\]{width:560px}.sm\:gap-6{gap:1.5rem}.sm\:p-12{padding:3rem}.sm\:p-4{padding:1rem}.sm\:p-8{padding:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-7xl{font-size:4.5rem;line-height:1}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:text-xs{font-size:0.75rem;line-height:1rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-rose-cream min-h-screen text-slate-800 relative selection:bg-pink-100 selection:text-pink-900">
+    <canvas id="petals-canvas" width="1536" height="826"></canvas>
+
+    <div class="fixed top-4 right-4 z-50 flex items-center space-x-2">
+      <button id="toggle-petals-btn" title="Activar/Desactivar Lluvia de Pétalos" class="bg-white/90 backdrop-blur-md p-3 rounded-full border border-pink-200 text-pink-600 shadow-md hover:scale-110 transition-all">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+      </button>
+      <button id="music-btn" title="Música de Fondo Ambient" class="bg-white/90 backdrop-blur-md p-3 rounded-full border border-amber-200 text-amber-600 shadow-md hover:scale-110 transition-all flex items-center justify-center">
+        <svg id="music-icon-off" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 .895-2 3-2 3 .895 3 2zm12 0c0 1.105-1.343 2-3 2s-3-.895-3-2 .895-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+        </svg>
+        <span id="music-wave" class="flex items-end space-x-0.5 h-4">
+          <span class="w-1 bg-amber-500 animate-bounce h-full"></span>
+          <span class="w-1 bg-amber-400 animate-bounce h-2/3"></span>
+          <span class="w-1 bg-amber-600 animate-bounce h-4/5"></span>
+        </span>
+      </button>
+    </div>
+
+    <header class="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-16 overflow-hidden">
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-30">
+        <div class="w-[320px] h-[320px] sm:w-[500px] sm:h-[500px] border border-amber-300 rounded-full animate-pulse-glow"></div>
+        <div class="absolute w-[360px] h-[360px] sm:w-[560px] sm:h-[560px] border border-pink-300 rounded-full"></div>
+      </div>
+
+      <div class="mb-4 animate-float">
+        <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full bg-gradient-to-tr from-pink-100 via-amber-50 to-white flex items-center justify-center shadow-lg border border-amber-200">
+          <svg class="w-12 h-12 text-amber-600" viewBox="0 0 64 64" fill="currentColor">
+            <path d="M32 6C30.5 12 26 18 20 20C14 22 6 20 6 20C6 20 12 26 18 28C24 30 28 34 30 40C32 46 32 58 32 58C32 58 32 46 34 40C36 34 40 30 46 28C52 26 58 20 58 20C58 20 50 22 44 20C38 18 33.5 12 32 6Z" opacity="0.95"></path>
+            <circle cx="32" cy="32" r="3" fill="#ad7835"></circle>
+          </svg>
+        </div>
+      </div>
+
+      <span class="text-xs sm:text-sm uppercase tracking-[0.3em] text-amber-700 font-semibold mb-2 block">
+        Sacramento de la
+      </span>
+
+      <h1 class="font-serif-title text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-amber-900 mb-2">
+        CONFIRMACIÓN
+      </h1>
+
+      <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto my-4"></div>
+
+      <p class="text-gray-600 italic font-serif-title text-lg sm:text-xl max-w-md mx-auto mb-6 px-4">
+        "Haz que la luz de tu Espíritu guíe cada uno de mis pasos y llene mi corazón de fe y amor."
+      </p>
+
+      <div class="my-4">
+        <p class="text-sm tracking-widest text-pink-700 uppercase font-medium mb-1">Tengo el honor de invitarte a la celebración de</p>
+        <h2 class="font-script text-5xl sm:text-7xl md:text-8xl gold-gradient-text drop-shadow-sm py-2 px-4">
+          Jennifer Ruiz Michel
+        </h2>
+      </div>
+
+      <div class="mt-6 inline-flex items-center space-x-3 bg-white/80 backdrop-blur-md px-6 py-3 rounded-full border border-amber-200/80 shadow-md">
+        <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+        <span class="font-serif-title text-lg sm:text-xl font-semibold text-amber-950">
+          Sábado, 3 de Octubre de 2026 • 3:00 p.m.
+        </span>
+      </div>
+
+      <a href="#detalles" class="mt-12 text-pink-400 hover:text-pink-600 transition-colors animate-bounce">
+        <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </header>
+
+    <section class="max-w-4xl mx-auto px-4 -mt-6 mb-16 relative z-20">
+      <div class="glass-card rounded-3xl p-6 sm:p-8 text-center border-amber-200">
+        <h3 class="font-serif-title text-2xl sm:text-3xl text-amber-900 font-semibold mb-6">
+          Faltan muy pocos días para este gran día
+        </h3>
+
+        <div class="grid grid-cols-4 gap-2 sm:gap-6 max-w-lg mx-auto" id="countdown-container">
+          <div class="bg-gradient-to-b from-pink-50 to-white p-3 sm:p-4 rounded-2xl border border-pink-100 shadow-inner">
+            <span id="cd-days" class="block font-serif-title text-3xl sm:text-5xl font-bold text-amber-700">05</span>
+            <span class="text-[10px] sm:text-xs tracking-wider uppercase text-gray-500 font-medium">Días</span>
+          </div>
+          <div class="bg-gradient-to-b from-pink-50 to-white p-3 sm:p-4 rounded-2xl border border-pink-100 shadow-inner">
+            <span id="cd-hours" class="block font-serif-title text-3xl sm:text-5xl font-bold text-amber-700">13</span>
+            <span class="text-[10px] sm:text-xs tracking-wider uppercase text-gray-500 font-medium">Horas</span>
+          </div>
+          <div class="bg-gradient-to-b from-pink-50 to-white p-3 sm:p-4 rounded-2xl border border-pink-100 shadow-inner">
+            <span id="cd-minutes" class="block font-serif-title text-3xl sm:text-5xl font-bold text-amber-700">09</span>
+            <span class="text-[10px] sm:text-xs tracking-wider uppercase text-gray-500 font-medium">Minutos</span>
+          </div>
+          <div class="bg-gradient-to-b from-pink-50 to-white p-3 sm:p-4 rounded-2xl border border-pink-100 shadow-inner">
+            <span id="cd-seconds" class="block font-serif-title text-3xl sm:text-5xl font-bold text-amber-700">03</span>
+            <span class="text-[10px] sm:text-xs tracking-wider uppercase text-gray-500 font-medium">Segundos</span>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <button onclick="addToCalendar()" class="inline-flex items-center space-x-2 text-xs sm:text-sm bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 font-medium py-2.5 px-5 rounded-full transition-colors">
+            <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+            </svg>
+            <span>Agendar en Google Calendar</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="detalles" class="max-w-4xl mx-auto px-4 py-8 mb-12">
+      <div class="text-center mb-10">
+        <span class="text-xs uppercase tracking-[0.25em] text-amber-600 font-semibold">Con la compañía y bendición de</span>
+        <h3 class="font-serif-title text-3xl sm:text-4xl text-amber-950 font-bold mt-1">Mis Seres Queridos</h3>
+        <div class="w-16 h-0.5 bg-amber-300 mx-auto mt-3"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-card rounded-3xl p-8 text-center relative overflow-hidden group hover:border-pink-300 transition-all duration-300">
+          <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4 border border-pink-200 text-pink-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-serif-title text-2xl font-bold text-amber-900 mb-2">Mis Padres</h4>
+          <p class="text-xs text-amber-700 font-medium uppercase tracking-wider mb-4">Quienes me han guiado con amor</p>
+
+          <div class="space-y-2 font-serif-title text-lg text-gray-800 font-medium">
+            <p class="p-2 rounded-xl bg-pink-50/50 border border-pink-100/60">María del Carmen Michel Rufino</p>
+            <p class="p-2 rounded-xl bg-pink-50/50 border border-pink-100/60">Oscar Ruiz García</p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-3xl p-8 text-center relative overflow-hidden group hover:border-amber-300 transition-all duration-300">
+          <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 border border-amber-200 text-amber-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-serif-title text-2xl font-bold text-amber-900 mb-2">Mis Padrinos</h4>
+          <p class="text-xs text-amber-700 font-medium uppercase tracking-wider mb-4">Mis guías espirituales</p>
+
+          <div class="space-y-2 font-serif-title text-lg text-gray-800 font-medium">
+            <p class="p-2 rounded-xl bg-amber-50/50 border border-amber-100/60">María Debora Rufino Miranda</p>
+            <p class="p-2 rounded-xl bg-amber-50/50 border border-amber-100/60">Javier Belli Cano</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-4 py-8 mb-12">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+        <div class="text-center mb-8">
+          <div class="inline-block p-3 rounded-full bg-amber-100/80 border border-amber-300 text-amber-700 mb-3">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <span class="text-xs uppercase tracking-[0.25em] text-amber-700 font-semibold block">Recepción y Festejo</span>
+          <h3 class="font-serif-title text-3xl sm:text-4xl text-amber-950 font-bold mt-1">Ubicación de la Celebración</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="space-y-4">
+            <div class="flex items-start space-x-4 p-4 rounded-2xl bg-pink-50/60 border border-pink-100">
+              <div class="p-2.5 bg-white rounded-xl text-pink-600 shadow-sm">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h5 class="font-semibold text-gray-900">Fecha del Evento</h5>
+                <p class="text-sm text-gray-600">Sábado, 3 de Octubre de 2026</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 p-4 rounded-2xl bg-amber-50/60 border border-amber-100">
+              <div class="p-2.5 bg-white rounded-xl text-amber-600 shadow-sm">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h5 class="font-semibold text-gray-900">Hora de Inicio</h5>
+                <p class="text-sm text-gray-600">3:00 p.m. en punto</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 p-4 rounded-2xl bg-amber-50/60 border border-amber-100">
+              <div class="p-2.5 bg-white rounded-xl text-amber-600 shadow-sm">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h5 class="font-semibold text-gray-900">Lugar del Festejo</h5>
+                <p class="text-sm text-gray-600">Haz clic en el botón para abrir el mapa interactivo en tu GPS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-amber-50 to-pink-50 p-6 rounded-3xl border border-amber-200 text-center flex flex-col justify-center items-center shadow-inner h-full min-h-[220px]">
+            <div class="w-16 h-16 rounded-2xl bg-white shadow-md flex items-center justify-center mb-4 text-amber-600">
+              <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+              </svg>
+            </div>
+            <h4 class="font-serif-title text-2xl font-bold text-amber-950 mb-2">Ver en Google Maps</h4>
+            <p class="text-xs text-gray-600 mb-6 max-w-xs">Obtén la ruta exacta hacia el lugar de la celebración con un solo toque.</p>
+
+            <a href="https://maps.app.goo.gl/Y6YTDBVm9t3kKsAk6?g_st=aw" target="_blank" rel="noopener noreferrer" class="gold-button text-white font-semibold py-3 px-8 rounded-full inline-flex items-center space-x-2 text-sm">
+              <span>Abrir Mapa de Google</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-4 py-8 mb-16">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden border-pink-200">
+        <div class="w-16 h-16 bg-gradient-to-tr from-pink-100 to-amber-100 text-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 border border-pink-300 shadow-md animate-bounce">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V6a2 2 0 10-2 2h2zm0 13C10.832 21 2 13.687 2 9.5 2 7.015 3.791 5 6 5c1.47 0 2.766.726 3.535 1.838A4.992 4.992 0 0113 5c2.209 0 4 2.015 4 4.5 0 4.187-8.832 11.5-9 11.5z"></path>
+          </svg>
+        </div>
+
+        <span class="text-xs uppercase tracking-[0.25em] text-pink-700 font-semibold block">Muestras de Cariño &amp; Regalos</span>
+        <h3 class="font-serif-title text-3xl sm:text-5xl text-amber-950 font-bold mt-1 mb-4">
+          ¡Consentamos a Jennifer! 🎁✨
+        </h3>
+
+        <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-pink-400 to-transparent mx-auto mb-6"></div>
+
+        <p class="text-gray-700 italic font-serif-title text-lg sm:text-xl max-w-2xl mx-auto mb-10 px-2 leading-relaxed">
+          "El mejor regalo es contar con tu alegre presencia y tus bendiciones. Sin embargo, si deseas consentir a Jennifer en este día tan especial y ayudarla a hacer realidad sus metas y sueños, ¡aquí te dejamos algunas lindas opciones!"
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mb-10">
+          <div class="bg-white/90 p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-all">
+            <div class="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-3">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h4 class="font-serif-title text-xl font-bold text-amber-900 mb-1">✉️ Lluvia de Sobres</h4>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              En la recepción contaremos con un buzón especial donde podrás depositar tu sobre con tus buenos deseos y muestra de cariño en efectivo.
+            </p>
+          </div>
+
+          <div class="bg-white/90 p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-all">
+            <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-3">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+              </svg>
+            </div>
+            <h4 class="font-serif-title text-xl font-bold text-amber-900 mb-1">🎁 Detalles y Regalos</h4>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              ¡Cualquier presente preparado con amor como ropa, accesorios, perfumería o un detalle especial hará sonreír a Jennifer!
+            </p>
+          </div>
+
+          <div class="bg-white/90 p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-all">
+            <div class="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-3">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h4 class="font-serif-title text-xl font-bold text-amber-900 mb-1">💳 Tarjetas de Regalo</h4>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Las Gift Cards (Amazon, Liverpool, Mercado Libre) son una maravillosa idea para que Jennifer elija su regalo favorito.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <button onclick="togglePreferencesModal()" class="gold-button text-white font-semibold py-3 px-8 rounded-full text-sm inline-flex items-center space-x-2">
+            <span>✨ Ver Gustos y Favoritos de Jennifer</span>
+          </button>
+
+          <button onclick="toggleMessageModal()" class="rose-button text-white font-semibold py-3 px-8 rounded-full text-sm inline-flex items-center space-x-2">
+            <span>💌 Dejar una Carta / Mensaje a Jennifer</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="pref-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full border border-pink-200 shadow-2xl relative transform scale-95 transition-all" id="pref-modal-content">
+        <button onclick="togglePreferencesModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        <div class="text-center mb-6">
+          <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-2 text-pink-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-serif-title text-2xl font-bold text-amber-950">Favoritos de Jennifer</h4>
+          <p class="text-xs text-gray-500">Ideas por si deseas regalarle algo especial</p>
+        </div>
+
+        <div class="space-y-3 text-sm">
+          <div class="p-3 bg-pink-50 rounded-xl border border-pink-100 flex items-center justify-between">
+            <span class="font-medium text-gray-700">🎨 Colores Favoritos:</span>
+            <span class="text-pink-600 font-semibold">Rosa Pastel, Blanco &amp; Dorado</span>
+          </div>
+          <div class="p-3 bg-amber-50 rounded-xl border border-amber-100 flex items-center justify-between">
+            <span class="font-medium text-gray-700">👗 Estilo &amp; Accesorios:</span>
+            <span class="text-amber-800 font-semibold">Joyería delicada, bolsos &amp; moda</span>
+          </div>
+          <div class="p-3 bg-pink-50 rounded-xl border border-pink-100 flex items-center justify-between">
+            <span class="font-medium text-gray-700">🛍️ Tiendas Favoritas:</span>
+            <span class="text-pink-600 font-semibold">Liverpool, Amazon, Sephora</span>
+          </div>
+          <div class="p-3 bg-amber-50 rounded-xl border border-amber-100 flex items-center justify-between">
+            <span class="font-medium text-gray-700">✉️ Sobres y Efectivo:</span>
+            <span class="text-amber-800 font-semibold">Buzón especial en el evento</span>
+          </div>
+        </div>
+
+        <button onclick="togglePreferencesModal()" class="w-full gold-button text-white font-semibold py-3 rounded-xl text-sm mt-6">
+          ¡Entendido, muchas gracias! ✨
+        </button>
+      </div>
+    </div>
+
+    <div id="msg-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-all duration-300 opacity-0 pointer-events-none">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full border border-pink-200 shadow-2xl relative transform transition-all scale-95" id="msg-modal-content">
+        <button onclick="toggleMessageModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        <div class="text-center mb-4">
+          <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-2 text-pink-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h4 class="font-serif-title text-2xl font-bold text-amber-950">Escribir una Carta a Jennifer</h4>
+          <p class="text-xs text-gray-500">Tu mensaje llegará directamente a su celular y quedará guardado con cariño.</p>
+        </div>
+
+        <form id="wishes-form" onsubmit="submitWishes(event)" class="space-y-4 hidden">
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 mb-1 uppercase tracking-wider">Tu Nombre o Familia *</label>
+            <input type="text" id="sender-name" required="" placeholder="Ej. Tía María / Familia Gómez" class="w-full px-4 py-2.5 rounded-xl bg-gray-50 border border-amber-200 focus:outline-none focus:ring-2 focus:ring-pink-300 text-sm" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 mb-1 uppercase tracking-wider">Tu Carta o Felicitación *</label>
+            <textarea id="sender-message" required="" rows="4" placeholder="Escribe tus palabras, bendiciones o detalles de regalo para Jennifer..." class="w-full px-4 py-2.5 rounded-xl bg-gray-50 border border-amber-200 focus:outline-none focus:ring-2 focus:ring-pink-300 text-sm"></textarea>
+          </div>
+
+          <div class="space-y-2 pt-2">
+            <button type="button" onclick="sendViaWhatsApp()" class="w-full whatsapp-button text-white font-semibold py-3 px-4 rounded-xl text-sm shadow-md inline-flex items-center justify-center space-x-2">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.14 4.162 4.283-1.123z"></path>
+              </svg>
+              <span>Enviar Carta por WhatsApp</span>
+            </button>
+
+            <button type="submit" class="w-full rose-button text-white font-semibold py-2.5 px-4 rounded-xl text-xs opacity-90 hover:opacity-100">
+              Guardar mensaje en el Buzón Digital de la página
+            </button>
+          </div>
+        </form>
+
+        <div id="wishes-success" class="text-center py-6 space-y-3">
+          <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center mx-auto">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <p class="font-serif-title text-2xl font-bold text-pink-700">¡Carta Guardada!</p>
+          <p class="text-xs text-gray-600">Muchas gracias por tus hermosas palabras y bendiciones para Jennifer.</p>
+          <button onclick="toggleMessageModal()" class="text-xs text-pink-600 font-semibold underline">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="admin-modal" class="fixed inset-0 bg-black/60 backdrop-blur-md z-50 flex items-center justify-center p-4 transition-all duration-300 opacity-0 pointer-events-none">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full border border-amber-200 shadow-2xl relative max-h-[85vh] flex flex-col transform transition-all scale-95" id="admin-modal-content">
+        <button onclick="toggleAdminModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        <div class="text-center mb-4 flex-shrink-0">
+          <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-2 text-amber-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h4 class="font-serif-title text-2xl font-bold text-amber-950">Buzón Privado de Cartas</h4>
+          <p class="text-xs text-gray-500">Cartas y felicitaciones guardadas en esta página</p>
+        </div>
+
+        <div id="admin-lock-screen" class="py-6 space-y-4 text-center hidden">
+          <p class="text-xs text-gray-600">Ingresa la clave de anfitrión para ver las cartas recibidas:</p>
+          <input type="password" id="admin-pass-input" placeholder="Clave (Ej. 2026)" class="w-48 mx-auto px-4 py-2 border border-amber-300 rounded-xl text-center text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
+          <button onclick="checkAdminPassword()" class="block w-48 mx-auto gold-button text-white font-semibold py-2 rounded-xl text-xs shadow-md">
+            Entrar al Buzón
+          </button>
+        </div>
+
+        <div id="admin-letters-screen" class="overflow-y-auto flex-1 space-y-3 pr-1">
+          <div id="letters-list-container" class="space-y-3"><p class="text-xs text-center text-gray-500 py-6">Aún no se han guardado cartas o mensajes en este dispositivo. ¡Anima a tus invitados a enviar su carta por WhatsApp!</p></div>
+          <div class="pt-4 flex justify-between items-center text-xs">
+            <button onclick="clearAllLetters()" class="text-red-500 hover:underline">Borrar historial</button>
+            <button onclick="exportLettersText()" class="text-amber-700 font-semibold underline">Copiar todas las cartas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-12 text-center text-gray-500 text-xs border-t border-pink-100 bg-white/50 backdrop-blur-sm">
+      <p class="font-serif-title text-lg text-amber-900 font-semibold mb-1">Jennifer Ruiz Michel</p>
+      <p class="text-gray-400 mb-4">Sacramento de la Confirmación • 3 de Octubre de 2026</p>
+
+      <div class="flex flex-wrap justify-center items-center gap-3">
+        <button onclick="copyShareLink()" class="inline-flex items-center space-x-1 bg-white px-4 py-2 rounded-full border border-pink-200 text-pink-700 hover:bg-pink-50 transition-colors shadow-sm">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 100-2.684 3 3 0 000 2.684zm0 9a3 3 0 100-2.684 3 3 0 000 2.684z"></path>
+          </svg>
+          <span>Compartir Invitación</span>
+        </button>
+
+        <button onclick="toggleAdminModal()" class="inline-flex items-center space-x-1 bg-amber-50 px-4 py-2 rounded-full border border-amber-200 text-amber-800 hover:bg-amber-100 transition-colors shadow-sm">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+          </svg>
+          <span>🔒 Ver Buzón de Cartas (Anfitrión)</span>
+        </button>
+      </div>
+    </footer>
+
+    <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-5 py-3 rounded-full shadow-2xl transition-all duration-300 z-50 flex items-center space-x-2 opacity-0 pointer-events-none">
+      <span id="toast-message">Historial de cartas limpiado</span>
+    </div>
+
+    <script>
+      const hostWhatsAppNumber = "";
+
+      const targetDate = new Date('2026-10-03T15:00:00').getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff > 0) {
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          document.getElementById('cd-days').innerText = String(days).padStart(2, '0');
+          document.getElementById('cd-hours').innerText = String(hours).padStart(2, '0');
+          document.getElementById('cd-minutes').innerText = String(minutes).padStart(2, '0');
+          document.getElementById('cd-seconds').innerText = String(seconds).padStart(2, '0');
+        } else {
+          document.getElementById('countdown-container').innerHTML = '<p class="text-2xl font-serif-title font-bold text-pink-700 col-span-4">¡Hoy es el gran día de la Confirmación!</p>';
+        }
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      function addToCalendar() {
+        const title = encodeURIComponent("Confirmación de Jennifer Ruiz Michel");
+        const details = encodeURIComponent("Celebración del Sacramento de la Confirmación de Jennifer Ruiz Michel.");
+        const location = encodeURIComponent("https://maps.app.goo.gl/Y6YTDBVm9t3kKsAk6?g_st=aw");
+        const startDate = "20261003T150000";
+        const endDate = "20261003T200000";
+
+        const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startDate}/${endDate}&details=${details}&location=${location}`;
+        window.open(calendarUrl, '_blank');
+      }
+
+      function togglePreferencesModal() {
+        const modal = document.getElementById('pref-modal');
+        const modalContent = document.getElementById('pref-modal-content');
+        if (modal.classList.contains('opacity-0')) {
+          modal.classList.remove('opacity-0', 'pointer-events-none');
+          modalContent.classList.remove('scale-95');
+          modalContent.classList.add('scale-100');
+        } else {
+          modal.classList.add('opacity-0', 'pointer-events-none');
+          modalContent.classList.remove('scale-100');
+          modalContent.classList.add('scale-95');
+        }
+      }
+
+      function toggleMessageModal() {
+        const modal = document.getElementById('msg-modal');
+        const modalContent = document.getElementById('msg-modal-content');
+        if (modal.classList.contains('opacity-0')) {
+          modal.classList.remove('opacity-0', 'pointer-events-none');
+          modalContent.classList.remove('scale-95');
+          modalContent.classList.add('scale-100');
+          document.getElementById('wishes-form').classList.remove('hidden');
+          document.getElementById('wishes-success').classList.add('hidden');
+        } else {
+          modal.classList.add('opacity-0', 'pointer-events-none');
+          modalContent.classList.remove('scale-100');
+          modalContent.classList.add('scale-95');
+        }
+      }
+
+      function sendViaWhatsApp() {
+        const name = document.getElementById('sender-name').value.trim();
+        const message = document.getElementById('sender-message').value.trim();
+
+        if (!name || !message) {
+          showToast("Por favor escribe tu nombre y tu carta primero 🌸");
+          return;
+        }
+
+        saveLetterLocally(name, message);
+
+        const text = `*Carta para Jennifer Ruiz Michel* 🌸\n\n*De:* ${name}\n\n"${message}"\n\n_Enviado desde la Invitación Digital_ ✨`;
+        let whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+        if (hostWhatsAppNumber) {
+          whatsappUrl = `https://api.whatsapp.com/send?phone=${hostWhatsAppNumber}&text=${encodeURIComponent(text)}`;
+        }
+
+        window.open(whatsappUrl, '_blank');
+        triggerConfetti();
+        toggleMessageModal();
+        showToast("¡Abriendo WhatsApp para enviar tu carta! 📱✨");
+      }
+
+      function submitWishes(event) {
+        event.preventDefault();
+        const name = document.getElementById('sender-name').value.trim();
+        const message = document.getElementById('sender-message').value.trim();
+
+        if (name && message) {
+          saveLetterLocally(name, message);
+          document.getElementById('wishes-form').classList.add('hidden');
+          document.getElementById('wishes-success').classList.remove('hidden');
+          triggerConfetti();
+          showToast("¡Carta guardada en el buzón! 🌸");
+        }
+      }
+
+      function saveLetterLocally(name, message) {
+        let letters = JSON.parse(localStorage.getItem('jennifer_confirmacion_cartas') || '[]');
+        letters.push({
+          id: Date.now(),
+          name: name,
+          message: message,
+          date: new Date().toLocaleString('es-MX', { dateStyle: 'short', timeStyle: 'short' })
+        });
+        localStorage.setItem('jennifer_confirmacion_cartas', JSON.stringify(letters));
+      }
+
+      function toggleAdminModal() {
+        const modal = document.getElementById('admin-modal');
+        const modalContent = document.getElementById('admin-modal-content');
+        if (modal.classList.contains('opacity-0')) {
+          modal.classList.remove('opacity-0', 'pointer-events-none');
+          modalContent.classList.remove('scale-95');
+          modalContent.classList.add('scale-100');
+        } else {
+          modal.classList.add('opacity-0', 'pointer-events-none');
+          modalContent.classList.remove('scale-100');
+          modalContent.classList.add('scale-95');
+        }
+      }
+
+      function checkAdminPassword() {
+        const input = document.getElementById('admin-pass-input').value.trim();
+        if (input === '2026' || input.toLowerCase() === 'jennifer' || input === '1234') {
+          document.getElementById('admin-lock-screen').classList.add('hidden');
+          document.getElementById('admin-letters-screen').classList.remove('hidden');
+          loadLettersInAdmin();
+        } else {
+          showToast("Clave incorrecta (Intenta: 2026) 🔒");
+        }
+      }
+
+      function loadLettersInAdmin() {
+        const container = document.getElementById('letters-list-container');
+        const letters = JSON.parse(localStorage.getItem('jennifer_confirmacion_cartas') || '[]');
+
+        if (letters.length === 0) {
+          container.innerHTML = '<p class="text-xs text-center text-gray-500 py-6">Aún no se han guardado cartas o mensajes en este dispositivo. ¡Anima a tus invitados a enviar su carta por WhatsApp!</p>';
+          return;
+        }
+
+        container.innerHTML = letters.map((item, index) => `
+          <div class="p-4 rounded-2xl bg-pink-50/70 border border-pink-100 text-left relative group">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-serif-title font-bold text-amber-900 text-base">De: ${item.name}</span>
+              <span class="text-[10px] text-gray-400">${item.date}</span>
+            </div>
+            <p class="text-xs text-gray-700 italic bg-white/80 p-3 rounded-xl border border-pink-100/60 leading-relaxed">
+              "${item.message}"
+            </p>
+          </div>
+        `).reverse().join('');
+      }
+
+      function clearAllLetters() {
+        if (confirm("¿Estás seguro de que deseas borrar el historial de cartas en este dispositivo?")) {
+          localStorage.removeItem('jennifer_confirmacion_cartas');
+          loadLettersInAdmin();
+          showToast("Historial de cartas limpiado");
+        }
+      }
+
+      function exportLettersText() {
+        const letters = JSON.parse(localStorage.getItem('jennifer_confirmacion_cartas') || '[]');
+        if (letters.length === 0) {
+          showToast("No hay cartas para copiar");
+          return;
+        }
+        let exportStr = "💌 CARTAS RECIBIDAS PARA JENNIFER RUIZ MICHEL 💌\n\n";
+        letters.forEach((item, i) => {
+          exportStr += `${i+1}. De: ${item.name} (${item.date})\n"${item.message}"\n---------------------\n`;
+        });
+        navigator.clipboard.writeText(exportStr);
+        showToast("¡Todas las cartas fueron copiadas al portapapeles! 📋");
+      }
+
+      function copyShareLink() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          showToast("¡Enlace de invitación copiado al portapapeles! 🌸");
+        }).catch(() => {
+          showToast("Enlace de invitación preparado para compartir 🌸");
+        });
+      }
+
+      function showToast(msg) {
+        const toast = document.getElementById('toast');
+        document.getElementById('toast-message').innerText = msg;
+        toast.classList.remove('opacity-0', 'pointer-events-none');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0', 'pointer-events-none');
+        }, 3000);
+      }
+
+      const canvas = document.getElementById('petals-canvas');
+      const ctx = canvas.getContext('2d');
+      let width = canvas.width = window.innerWidth;
+      let height = canvas.height = window.innerHeight;
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      let petals = [];
+      let petalsActive = true;
+
+      class Petal {
+        constructor() {
+          this.reset();
+        }
+        reset() {
+          this.x = Math.random() * width;
+          this.y = Math.random() * -height;
+          this.size = Math.random() * 8 + 6;
+          this.speedY = Math.random() * 1.2 + 0.8;
+          this.speedX = Math.random() * 0.8 - 0.4;
+          this.rotation = Math.random() * 360;
+          this.rotationSpeed = (Math.random() - 0.5) * 2;
+          this.color = Math.random() > 0.3 ? '#fbc4ab' : '#f4acb7';
+          this.opacity = Math.random() * 0.6 + 0.3;
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += Math.sin(this.y * 0.01) + this.speedX;
+          this.rotation += this.rotationSpeed;
+          if (this.y > height + 20) {
+            this.reset();
+          }
+        }
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate((this.rotation * Math.PI) / 180);
+          ctx.globalAlpha = this.opacity;
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.ellipse(0, 0, this.size, this.size / 2, Math.PI / 4, 0, 2 * Math.PI);
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      for (let i = 0; i < 35; i++) {
+        petals.push(new Petal());
+      }
+
+      function animatePetals() {
+        ctx.clearRect(0, 0, width, height);
+        if (petalsActive) {
+          petals.forEach(p => {
+            p.update();
+            p.draw();
+          });
+        }
+        requestAnimationFrame(animatePetals);
+      }
+      animatePetals();
+
+      document.getElementById('toggle-petals-btn').addEventListener('click', () => {
+        petalsActive = !petalsActive;
+        showToast(petalsActive ? "Efecto de pétalos activado 🌸" : "Efecto de pétalos desactivado");
+      });
+
+      function triggerConfetti() {
+        for (let i = 0; i < 40; i++) {
+          let p = new Petal();
+          p.y = Math.random() * height * 0.5;
+          p.speedY = Math.random() * 3 + 2;
+          petals.push(p);
+        }
+      }
+
+      let audioCtx = null;
+      let isPlaying = false;
+
+      document.getElementById('music-btn').addEventListener('click', () => {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+
+        if (!isPlaying) {
+          playSoftAmbient();
+          document.getElementById('music-icon-off').classList.add('hidden');
+          document.getElementById('music-wave').classList.remove('hidden');
+          showToast("Música ambiental activada 🎵");
+          isPlaying = true;
+        } else {
+          if (audioCtx) audioCtx.suspend();
+          document.getElementById('music-icon-off').classList.remove('hidden');
+          document.getElementById('music-wave').classList.add('hidden');
+          showToast("Música pausada");
+          isPlaying = false;
+        }
+      });
+
+      function playSoftAmbient() {
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        const freqs = [349.23, 440.00, 523.25, 659.25];
+        freqs.forEach((freq) => {
+          let osc = audioCtx.createOscillator();
+          let gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+          gain.gain.setValueAtTime(0.015, audioCtx.currentTime);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start();
+        });
+      }
+    </script>
+  </body>
+</html>
